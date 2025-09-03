@@ -1,0 +1,277 @@
+.print-only {
+  display: none;
+}
+.cbox1 {
+  width: 34px;
+  display: inline-block;
+}
+.cbox2 {
+  width: 34px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.cbox3 {
+  width: 34px;
+  display: inline-block;
+  margin-left: 20px;
+}
+.cboxR {
+  width: 34px;
+  display: inline-block;
+  float: right;
+}
+.cboxR1 {
+  width: 150px;
+  display: inline-block;
+  float: right;
+}
+.cblk {
+  margin-left: 60px;
+}
+@media print {
+  @page {
+    margin: 0;
+  }
+  body {
+    /*margin: 0.2cm;*/
+  }
+}
+
+@media print {
+  .cbox1 {
+    width: 36px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: -10px;
+  }
+  .cbox2 {
+    width: 36px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: -10px;
+    margin-left: 40px;
+  }
+  .cbox3 {
+    width: 36px;
+    height: 40px;
+    display: inline-block;
+    margin-bottom: -10px;
+    margin-left: 40px;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  #previewHTML {
+    height: auto;
+  }
+
+  * {
+    overflow: hidden;
+  }
+
+  html,
+  #previewHTML {
+    overflow-x: hidden !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+  }
+  body {
+    overflow: auto !important;
+    overflow-x: hidden !important;
+    height: auto !important;
+    page-break-after: avoid !important;
+    page-break-before: avoid !important;
+  }
+
+  #previewHTML #userInfo > table > tbody > tr > td {
+    width: 46%;
+    display: inline-block;
+  }
+
+  #userInfo label {
+    display: block;
+    height: 70px;
+    height: 40px;
+  }
+
+  #previewHTML .question-title.rx-editable {
+    padding-left: 5%;
+  }
+
+  #previewHTML .options,
+  #previewHTML .question-answer {
+    margin-left: 5%;
+  }
+
+  #activityArea {
+    width: 100%;
+  }
+
+  .marksDiv {
+    position: static;
+    width: auto;
+  }
+
+  .marksPreview {
+    width: 100%;
+  }
+
+  #level3 div#userInfo,
+  #auto-level-3 div#userInfo {
+    width: 100% !important;
+  }
+
+  .question-parent {
+    padding-left: 10px;
+    page-break-inside: avoid;
+    page-break-before: avoid;
+  }
+  h2,
+  h3 {
+    page-break-before: avoid;
+    page-break-after: avoid;
+  }
+}
+
+.printsection #previewHTML #userInfo {
+  margin: 0px;
+  background: #fff;
+  border: none;
+}
+
+.printsection .question-parent {
+  background: none;
+  border: none;
+  width: 100% !important;
+}
+
+.printsection .question-title.rx-editable {
+  width: 80%;
+}
+
+.printsection .question-parent {
+  display: inline-block;
+  font-size: 11px;
+}
+
+.printsection .marksDiv {
+  background: transparent;
+  top: -9px;
+  right: 90px;
+}
+
+.printsection .question-parent:after {
+  content: "";
+  display: block;
+  height: 0px;
+  visibility: hidden;
+}
+
+.printsection #userInfo {
+  margin: 0px;
+}
+
+span.previewNumbering {
+  margin-left: -11%;
+  display: inline-block;
+  width: 9%;
+  text-align: right;
+  margin-right: 2%;
+  vertical-align: top;
+}
+
+.question-parent {
+  page-break-inside: avoid;
+}
+
+#level3 #previewHTML .image,
+#auto-level-3 #previewHTML .image {
+  margin-left: 5%;
+  display: block;
+}
+
+#level3 #previewHTML span.aligntop:empty + .image,
+#auto-level-3 #previewHTML span.aligntop:empty + .image {
+  padding-top: 0px;
+  display: inline-block;
+}
+
+#previewHTML table table tr td:first-child {
+  /* background: #fbc507; */
+  padding-right: 3px;
+  width: 60px;
+}
+
+#previewHTML table tr > td:last-child table:last-child tr td:first-child {
+  width: 80px;
+}
+
+#previewHTML table table tr td:last-child {
+  padding-left: 0px !important;
+}
+
+#previewHTML table table tr td label {
+  display: inline !important;
+  white-space: nowrap;
+}
+
+#auto-level-3 .question-parent img,
+#auto-level-2 .question-parent img,
+#level2 .question-parent img,
+#level3 .question-parent img {
+  max-width: 100%;
+}
+
+body.hinditg .question-title,
+body.hinditg .simp-ans-text,
+body.hinditg .question-title.hTitle,
+body.hinditg #breadcrums,
+body.hinditg .options,
+body.hinditg #folders .main,
+body.hinditg #chapterList li label,
+body.hinditg #auto-worksheet-details,
+body.hinditg #auto-testpaper-details label.checkbox,
+body.hinditg #container,
+body.hinditg #new-question-insertion-form #afm-type,
+body.hinditg #new-question-insertion-form #afm-answer,
+body.hinditg #new-question-insertion-form textarea {
+  font-family: "Kruti Dev 010";
+  font-size: 130%;
+}
+
+body.hinditg .previewNumbering {
+  font-family: "Roboto", sans-serif;
+}
+
+body.hinditg .jstree-default .jstree-anchor {
+  font-size: 100%;
+}
+
+@media (max-width: 1000px) {
+  span.previewNumbering {
+    width: 13%;
+    margin-left: -15%;
+  }
+
+  #previewHTML .options,
+  #previewHTML .question-answer {
+    margin-left: 8%;
+  }
+
+  #level2 #previewHTML .image,
+  #auto-level-2 #previewHTML .image #level3 #previewHTML .image,
+  #auto-level-3 #previewHTML .image {
+    margin-left: 8%;
+  }
+
+  .question-title.rx-editable {
+    /*padding-left: 8% !important;*/
+  }
+
+  #pdfPreview .options,
+  #pdfPreview .question-answer {
+    margin-left: 8%;
+  }
+}

@@ -1,0 +1,364 @@
+﻿@media (max-width: 850px) {
+	.startScreen {
+		width: 100%;
+	}
+	
+.startScreen h1 {
+    font-size: 15px;
+}
+
+}
+
+@media (max-width: 500px) {
+	.TG_bg {
+		width: 100%;
+		background-size: 100%;
+	}
+		
+	h1#topTitle {
+		font-size: 30px;
+	}
+
+	h1#topTitle+h2 {
+		font-size: 26px;
+	}
+	
+	input#startBtn {
+		margin-top: 17px;
+		width: auto;
+	}
+	#userInfo input[type="text"]{
+		width: 190px;
+		margin-left: 26px;
+		
+}
+#userInfo {
+	height: 406px;
+}
+input[type="submit"], button {
+	margin-bottom: 19px;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	margin-left: 12px;
+
+}
+}
+
+@media (max-width: 850px) {
+	.startScreen {
+		width: 100%;
+	}
+
+	.startScreen h1 {
+		font-size: 20px;
+	}
+	#userInfo {
+		height: 369px;
+	}
+}
+
+@media (max-width: 800px) {
+	body {
+		overflow: auto;
+	}
+	
+	#collectionList {
+		width: 100%;
+		margin-left: 0px;
+		height: 100%;
+		padding: 0px;
+	}
+	
+	#level1_explorer {
+		width: 100%;
+		clear: both;
+		float: none;
+	}
+	
+	.level1-header {
+		width: auto;
+	}
+
+	div#wrapper-button {
+		width: auto;
+	}
+
+	#breadcrums > span {
+		display: none;
+	}
+
+	#breadcrums > span:last-child {
+		display: inline;
+	}
+
+	#stats > div {
+		display: block;
+		float: none;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	#addTest {
+		margin-right: 5px;
+		clear: both;
+		
+	}
+
+	#stats {
+		height: auto;
+		text-align: right;
+	}
+
+	span.quesSec {
+		text-align: left;
+		width: auto;
+	}
+
+	div#explorer {
+		clear: both;
+	}
+
+	.quesSecNo {
+		background: transparent;
+		padding: 0px;
+		border: none;
+	}
+	
+	div#pdfPreview {
+		clear: both;
+	}
+
+	#toolbars {
+		height: auto;
+	}
+
+	.mx-tools {
+		position: relative;
+		width: 100%;
+		float: none;
+		margin: 5px 0px 0px 0px;
+		right: 0px;
+		left: 0px;
+		background: rgba(255, 255, 255, 0.42);
+		top: 0px;
+		padding: 5px 0px;
+		text-align: left;
+	}
+
+	#pdfPreview .options {
+		width: 100%;
+	}
+
+	#pdfPreview label.numbering {
+		left: 3px;
+	}
+
+	#pdfPreview .question-parent {
+		padding: 5.75px 10px 8px 5px;
+	}
+
+	.marksDiv {
+		position: absolute;
+		left: auto;
+		top: auto;
+		background: transparent;
+		bottom: 0px;
+		height: 46px;
+		right: 9px;
+		z-index: 9;
+	}
+	#pdfPreview #userInfo > div {
+		float: none !important;
+		position: static !important;
+		display: block;
+		width: 100% !important;
+		text-align: left !important;
+	}
+
+	div#userInfo {
+		position: relative;
+	}
+	
+}
+@media (max-width: 640px) {
+	div#wrapper-button {
+    width: 227px;
+    float: left;
+	line-height: 30px;
+}
+/*#previewHTML td {
+	width: 49%;
+	font-size: 16px;
+	
+}*/
+#userInfo label {
+	margin-left: 1px;
+}
+}
+@media (max-width: 1920px) {
+#pdfPreview #userInfo > div:nth-child(7) {
+    left: 385px;
+    right: auto;
+    text-align: left;
+}
+#logoUpdateParent input {
+    margin-left: 0px;
+}
+/*.fileChooseBlocker {
+		width: 504px;
+		left: 140px;
+		height: 62px;
+}*/
+}
+/*@media (max-width: 1280px) {
+#pdfPreview #userInfo > div:nth-child(7) {
+	right: 18%;
+	
+}
+#logoUpdateParent input{
+	margin-left: 18px;
+}
+}*/
+@media (max-width: 800px) {
+	#pdfPreview #userInfo > div:nth-child(7) {
+		right: 2%;
+		bottom: 106px;
+	}
+	#userInfo input[type="text"] {
+		width: 261px;
+	}
+#breadcrums {
+	height: 60px;
+}
+.quesSecNo {
+	float: right;
+}
+#breadcrums > span.breadLabel {
+	margin: 0px 2px;
+}
+.fileChooseBlocker {
+	width: 341px;
+	top: 320px;
+    left: 139px;
+	height: 50px;
+}
+}
+
+}
+@media (max-width: 1024px) {
+#logoUpdateParent input {
+    margin-left: 18px;
+	}
+}
+@media (max-width: 980px) {
+	#pdfPreview #userInfo > div:nth-child(7) {
+    right: 18%;
+	}
+	
+}
+@media (min-width: 800px) {
+#logoUpdateParent input {
+    margin-left: 0px;
+}
+	}
+@media (max-width: 360px) {
+	#userInfo {
+	height: 458px;
+	}
+	#userInfo input[type="text"] {
+    width: 214px;
+}
+.fileChooseBlocker {
+	left: 120px;
+}
+@media (min-width: 1920px) {	
+	#logoUpdateParent input {
+		margin-left: 0px;
+	}
+	
+}
+
+@media (max-width: 760px) {
+	#userInfo table, #userInfo tbody, #userInfo tr, #userInfo td {
+		display: block;
+		width: 100%;
+		padding: 0px;
+		margin: 0px;
+	}
+
+
+	#userInfo tr, #userInfo tbody, #userInfo table {
+		clear: both;
+	}
+
+	 #userInfo table > tbody > tr > td td {
+		 width: auto;
+		 float: left;
+		 line-height: 31px;
+	}
+
+	#userInfo table > tbody > tr > td {
+		width: 100%;
+	}
+
+	div#userInfo {
+		height: auto;
+		padding-bottom: 20px;
+	}
+
+	#userInfo table > tbody > tr > td td label {
+		width: auto;
+		margin: 0px;
+		margin-right: 10px;
+		width: 120px !important;
+		display: block;
+	}
+
+	div#sContainIn {
+		clear: both;
+	}
+	
+	div#userInfo > table {
+		padding: 20px;
+	}
+	
+	#previewHTML .image, .image {
+		width: auto !important;
+	}
+	
+	#userInfo input[type="text"] {
+		margin: 0px !important;
+		float: right;
+	}
+
+	#userInfo > div {
+		clear: both;
+		margin-bottom: 28px;
+	}
+	
+	
+	#level1_explorer div#topHeader {
+		height: auto;
+	}
+
+	#level1_explorer div#wrapper-button {
+		float: none;
+	}
+
+	#level1_explorer .level1-header {
+		float: none;
+	}
+	
+	#toolbars, .level3-navigation button {
+		position: static !important;
+		display: block;
+		margin: 0px 5px !important;
+	}
+
+	#toolbars, .level3-navigation {
+		height: auto;
+		padding: 21px 0px;
+	}
+}

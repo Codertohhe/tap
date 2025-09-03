@@ -1,0 +1,1038 @@
+﻿button#showPrevBtn {
+  float: none;
+  display: inline;
+  margin: auto;
+}
+
+#showPrevBtn {
+  float: none;
+  display: inline;
+}
+
+#pdfPreview #userInfo > #form-btn {
+  text-align: center !important;
+}
+.outcomeText {
+  display: block;
+}
+
+@media (max-width: 1130px) {
+  #level1_explorer {
+    /* width: 80%; */
+  }
+
+  div#breadcrums span.breadLabel {
+    margin: 0px 2px;
+  }
+}
+
+@media (max-width: 850px) {
+  .startScreen h1 {
+    font-size: 15px;
+  }
+  .TG_bg {
+    /* bottom: 230px; */
+  }
+}
+
+@media (max-width: 500px) {
+  .tgMainTitle {
+    font-size: 16px;
+  }
+  .TG_bg {
+    width: 100%;
+    /* background-size: 100%; */
+  }
+
+  h1#topTitle {
+    font-size: 30px;
+  }
+
+  h1#topTitle + h2 {
+    font-size: 26px;
+  }
+
+  input#startBtn {
+    margin-top: 207px;
+    margin-left: 95px;
+    width: auto;
+  }
+  #userInfo input[type="text"] {
+    width: 190px;
+    margin-left: 26px;
+  }
+  #userInfo {
+    height: 406px;
+  }
+  input[type="submit"],
+  button {
+    margin-bottom: 19px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-left: 12px;
+  }
+}
+
+@media (max-width: 850px) {
+  .startScreen {
+    width: 100%;
+  }
+
+  .startScreen h1 {
+    font-size: 20px;
+  }
+  #userInfo {
+    height: 369px;
+  }
+}
+
+@media (max-width: 800px) {
+  body {
+    overflow: auto;
+  }
+  div#explorer {
+    width: 100%;
+  }
+  #collectionList {
+    width: 100%;
+    margin-left: 0px;
+    height: 100%;
+    padding: 0px;
+  }
+
+  #level1_explorer {
+    width: 100%;
+    clear: both;
+    float: none;
+  }
+
+  .level1-header {
+    width: auto;
+  }
+
+  div#wrapper-button {
+    /* width: auto; */
+  }
+
+  #sidePanel-auto {
+    width: 100% !important;
+    overflow: auto !important;
+  }
+
+  #auto-page1,
+  #auto-page2 {
+    width: 100% !important;
+  }
+
+  #breadcrums > span {
+    display: none;
+  }
+
+  #breadcrums > span:last-child {
+    display: inline;
+  }
+
+  #stats > div {
+    display: block;
+    float: none;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  #addTest {
+    margin-right: 5px;
+    clear: both;
+  }
+
+  #stats {
+    height: auto;
+    text-align: right;
+  }
+
+  span.quesSec {
+    text-align: left;
+    width: auto;
+  }
+
+  div#explorer {
+    clear: both;
+  }
+
+  .quesSecNo {
+    background: transparent;
+    padding: 0px;
+    border: none;
+  }
+
+  div#pdfPreview {
+    clear: both;
+  }
+
+  #toolbars {
+    height: auto;
+  }
+
+  .mx-tools {
+    position: relative;
+    width: 100%;
+    float: none;
+    margin: 5px 0px 0px 0px;
+    right: 0px;
+    left: 0px;
+    background: rgba(255, 255, 255, 0.42);
+    top: 0px;
+    padding: 5px 0px;
+    text-align: left;
+  }
+
+  #pdfPreview .options {
+    width: 100%;
+  }
+
+  #pdfPreview label.numbering {
+    left: 3px;
+  }
+
+  #pdfPreview .question-parent {
+    padding: 5.75px 10px 8px 5px;
+  }
+
+  .marksDiv {
+    position: absolute;
+    left: auto;
+    top: auto;
+    background: transparent;
+    bottom: 0px;
+    height: 46px;
+    right: 9px;
+    z-index: 1;
+  }
+  #pdfPreview #userInfo > div {
+    float: none !important;
+    position: static !important;
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
+  }
+
+  div#userInfo {
+    position: relative;
+  }
+  .TG_bg {
+    /* position: relative; */
+    bottom: 290px;
+    /* margin: auto; */
+    margin-left: -180px;
+  }
+  .CiE-txt.tgTitle {
+    font-size: 18px;
+  }
+}
+@media (max-width: 640px) {
+  .level1-header {
+    width: 100% !important;
+    text-align: center;
+  }
+
+  .auto-tabs-section {
+    /* width: 100% !important; */
+    /* float: none !important; */
+    /* text-align: center !important; */
+  }
+  div#wrapper-button {
+    float: left;
+    line-height: 30px;
+    width: 100%;
+    text-align: left;
+  }
+  div#topHeader {
+    height: 35%;
+  }
+  /*#previewHTML td {
+	width: 49%;
+	font-size: 16px;
+	
+}*/
+  #userInfo label {
+    margin-left: 1px;
+  }
+  .main {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .auto-tabs-section {
+    width: 100%;
+    clear: both;
+    float: none !important;
+    text-align: center !important;
+    height: 100% !important;
+  }
+  .auto-topsection {
+    display: none !important;
+  }
+  .auto-tabs-wrapper button {
+    display: inline-block;
+  }
+  .book_name {
+    float: none !important;
+    text-align: center;
+    margin: auto;
+    width: 100% !important;
+  }
+
+  .top_checkbox {
+    width: 100% !important;
+  }
+
+  .toolbars_preview {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 1920px) {
+  #pdfPreview #userInfo > div:nth-child(7) {
+    left: 270px;
+    bottom: 94px;
+    right: auto;
+    text-align: left;
+  }
+  #pdfPreview #userInfo > div:nth-child(3) {
+    width: 50%;
+  }
+  #logoUpdateParent {
+    top: -160px;
+    left: -9px;
+  }
+  #pdfPreview #userInfo > div:nth-child(6) {
+    left: 915px;
+    top: -1px;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 62px;
+    margin-left: -80px;
+  }
+
+  #logoUpdateParent input {
+    margin-left: 0px;
+  }
+  #userInfo label {
+    margin-left: 17px;
+    /*.fileChooseBlocker {
+		width: 504px;
+		left: 140px;
+		height: 62px;
+}*/
+  }
+  .fileChooseBlocker {
+    top: 0px;
+    left: 139px;
+  }
+  #pdfPreview #userInfo > div:nth-child(3) {
+    position: relative;
+    top: -53px;
+  }
+  #pdfPreview #userInfo > div:nth-child(5) {
+    top: 116px;
+    left: 268px;
+  }
+  .level1-header {
+    /* width: 44%; */
+  }
+  #wrapper-button {
+    /* width: 54%; */
+  }
+}
+/*@media (max-width: 1280px) {
+#pdfPreview #userInfo > div:nth-child(7) {
+	right: 18%;
+	
+}
+#logoUpdateParent input{
+	margin-left: 18px;
+}
+}*/
+@media (max-width: 800px) {
+  #pdfPreview #userInfo > div:nth-child(7) {
+    right: 2%;
+    bottom: 106px;
+  }
+  #userInfo input[type="text"] {
+    width: 211px;
+  }
+  #breadcrums {
+    height: 35px;
+  }
+  .quesSecNo {
+    float: right;
+  }
+  #breadcrums > span.breadLabel {
+    margin: 0px 2px;
+  }
+  .fileChooseBlocker {
+    width: 341px;
+    top: 180px;
+    left: 551px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 1500px) {
+  #logoUpdateParent input {
+    margin-left: 18px;
+  }
+  #pdfPreview #userInfo > div:nth-child(5) {
+    top: 116px;
+    left: 138px;
+  }
+  #pdfPreview #userInfo > div:nth-child(6) {
+    top: 3px;
+    left: 653px;
+  }
+  #logoUpdateParent {
+    top: -167px;
+  }
+  #pdfPreview #userInfo > div:nth-child(7) {
+    bottom: 87px;
+    left: 137px;
+  }
+  #pdfPreview #userInfo > div:nth-child(2) {
+    width: 31%;
+    margin-top: 63px;
+    margin-left: -13px;
+  }
+  .fileChooseBlocker {
+    top: 4px;
+    left: 168px;
+    z-index: 999;
+  }
+  .level1-header {
+    /* margin-left: 142px; */
+
+    /* width: 30%; */
+  }
+  #wrapper-button {
+    /* width: 52%; */
+  }
+}
+@media screen and (max-width: 1040px) {
+  #toolbars {
+    height: auto;
+  }
+
+  #toolbars .auto_level-buttons {
+    height: 100%;
+  }
+  .auto_level-buttons button {
+    margin: 5px auto;
+  }
+
+  .toolbarsHead {
+    width: 40% !important;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .main {
+    width: 25%;
+  }
+
+  .folder_name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 980px) {
+  #pdfPreview #userInfo > div:nth-child(7) {
+    right: 18%;
+    left: 46px;
+    bottom: 200px;
+  }
+  #logoUpdateParent {
+    top: -149px;
+    width: 48%;
+  }
+  #pdfPreview #userInfo > div:nth-child(5) {
+    left: 50px;
+    top: 149px;
+  }
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 61px;
+    width: 44%;
+    margin-left: -10px;
+  }
+  #pdfPreview #userInfo > div:nth-child(6) {
+    top: -3px;
+    left: 477px;
+  }
+  pdfPreview #userInfo > div:nth-child(3) {
+    width: 51%;
+  }
+  .fileChooseBlocker {
+    top: 2px;
+    /*left: 634px;*/
+  }
+  .level1-header {
+    /* width: 30%; */
+  }
+  h1.tgTitle {
+    /* padding: 0; */
+    /* font-size: 22px; */
+  }
+  #wrapper-button {
+    width: 40% !important;
+  }
+  .manual-filter-container {
+    /*
+		position: relative !important;
+		right: 0 !important;
+		bottom: 0 !important;
+		padding-bottom: 10px !important;
+		*/
+  }
+
+  #topHeader {
+    height: auto !important;
+  }
+
+  #topHeader .auto-topsection {
+    width: auto !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .quesSecNo {
+    padding: 5px 0px;
+  }
+
+  #explorer .info_btn {
+    padding: 5px;
+    margin: 0px 4px;
+  }
+
+  .book_name .tgTitle {
+    font-size: 20px;
+  }
+
+  #level1 .book_name {
+    width: 38%;
+  }
+
+  #level2 .finalise_btns .info_btn,
+  #auto-level-2 .finalise_btns .info_btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+
+  #auto-level-2 #pdfPreview #userInfo input,
+  #level2 #pdfPreview #userInfo input {
+    width: auto;
+  }
+
+  #auto-level-2 #pdfPreview #userInfo label,
+  #level2 #pdfPreview #userInfo label {
+    width: 70px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .toolbars_preview {
+    float: none;
+  }
+}
+
+@media (min-width: 800px) {
+  #logoUpdateParent input {
+    margin-left: 0px;
+  }
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: 768px) {
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 11px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .auto-top-bar .cntiner .pull-right,
+  .auto-top-bar .cntiner .pull-left {
+    float: none !important;
+    margin: 5px auto;
+  }
+
+  .activityDetails {
+    margin: 20px auto;
+  }
+
+  table.auto-seelctquestions th {
+    font-size: 14px;
+  }
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    font-size: 14px !important;
+  }
+
+  #auto-testpaper-details {
+    font-size: 14px;
+  }
+  label.ml100 {
+    margin: 0;
+  }
+}
+
+@media (max-width: 360px) {
+  #userInfo {
+    height: 458px;
+  }
+  #userInfo input[type="text"] {
+    width: 200px;
+  }
+  .fileChooseBlocker {
+    left: 156px;
+    top: 341px;
+  }
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 29px;
+  }
+
+  .marksPreview {
+    margin-left: 30px;
+    margin-top: 19px;
+  }
+
+  .level1-header {
+    /* margin-left: 83px; */
+    width: 53%;
+  }
+  /*.marksDiv {
+		bottom: -16px;
+		right: -18px;
+	}
+	.marksInput {
+		margin-right: 22px;
+	}*/
+
+  /*#userInfo label {
+    margin-left: 5px;
+}*/
+}
+/*@media (min-width: 1920px) {	
+	#logoUpdateParent input {
+		margin-left: 0px;
+	}
+	
+}*/
+
+@media (max-width: 760px) {
+  #userInfo table,
+  #userInfo tbody,
+  #userInfo tr,
+  #userInfo td {
+    display: block;
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  #userInfo tr,
+  #userInfo tbody,
+  #userInfo table {
+    clear: both;
+  }
+
+  #userInfo table > tbody > tr > td td {
+    width: auto;
+    float: left;
+    line-height: 31px;
+  }
+
+  #userInfo table > tbody > tr > td {
+    width: 100%;
+  }
+
+  div#userInfo {
+    height: auto;
+    padding-bottom: 20px;
+    padding-right: 10px;
+  }
+
+  #userInfo table > tbody > tr > td td label {
+    width: auto;
+    margin: 0px;
+    margin-right: 10px;
+    width: 120px !important;
+    display: block;
+  }
+
+  div#sContainIn {
+    clear: both;
+  }
+
+  div#userInfo > table {
+    padding: 20px;
+  }
+
+  #previewHTML .image,
+  .image {
+    width: auto !important;
+  }
+
+  #userInfo input[type="text"] {
+    margin: 0px !important;
+    float: right;
+  }
+
+  #userInfo > div {
+    clear: both;
+    margin-bottom: 28px;
+  }
+
+  #level1_explorer div#topHeader {
+    height: auto;
+  }
+
+  #level1_explorer div#wrapper-button {
+    float: none;
+  }
+
+  #level1_explorer .level1-header {
+    float: none;
+  }
+
+  #toolbars {
+    position: static !important;
+    display: block;
+    margin: 0px 5px !important;
+  }
+
+  #toolbars {
+    height: auto !important;
+    /* padding: 21px 0px; */
+  }
+
+  #topHeader .auto-tabs-section {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 10px auto;
+  }
+
+  #topHeader .auto-tabs-wrapper button {
+    display: inline-block;
+  }
+  div#wrapper-button {
+    width: 100% !important;
+    float: none;
+    text-align: left;
+  }
+
+  .totalQues {
+    display: block !important;
+  }
+}
+@media (min-width: 800px) {
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 11px;
+  }
+}
+@media (min-width: 320px) {
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 11px;
+  }
+}
+@media (min-width: 980px) {
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-top: 61px;
+  }
+}
+
+@media (max-width: 768px) {
+  #pdfPreview #userInfo > div:nth-child(2) {
+    margin-left: 0px !important;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(9) {
+    width: 100%;
+    text-align: center;
+    float: none;
+  }
+
+  button#showPrevBtn {
+    float: none;
+    margin: auto;
+    display: inline;
+  }
+}
+
+@media (max-width: 600px) {
+  #replaceQuestion > div {
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 99999;
+  }
+
+  #replaceList .question-title {
+    width: 100%;
+    float: none;
+  }
+
+  #replaceList img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  #replaceQuestion {
+    z-index: 99;
+  }
+
+  #replaceList > .question-parent > input[type="checkbox"] {
+    margin-bottom: 10px;
+    margin-left: 0px;
+  }
+  .TG_bg {
+    /* margin-left: -4px; */
+    /* margin-top: 10px; */
+    bottom: 30%;
+    /* margin-left: -100px; */
+  }
+}
+
+@media (min-width: 768px) {
+  #pdfPreview #userInfo > div:nth-child(1) {
+    width: 30%;
+    text-align: left;
+    margin-left: 20%;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(3) {
+    width: 30%;
+    text-align: left;
+    margin-left: 20%;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(5) {
+    width: 30%;
+    text-align: left;
+    margin-left: 20%;
+    float: left;
+    left: 0px;
+    top: -49px !important;
+    left: 50% !important;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(7) {
+    width: 30%;
+    left: 0px;
+    margin-left: 20%;
+    text-align: left;
+  }
+
+  #userInfo label {
+    display: inline-block;
+    margin: 0px;
+    width: 50px;
+  }
+
+  #userInfo input[type="text"] {
+    margin-left: 0px !important;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(2) {
+    width: 50%;
+    margin-left: 0px;
+    text-align: left;
+    padding-top: 11px;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(4) {
+    width: 50%;
+    text-align: left;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(6) {
+    left: 50%;
+    width: 50%;
+    text-align: left;
+  }
+
+  div#logoUpdateParent {
+    width: 50% !important;
+    left: 50%;
+    text-align: left;
+    margin: 0px;
+    position: absolute;
+    top: 6%;
+    z-index: 999999999999999999999;
+  }
+
+  #pdfPreview #userInfo > div:nth-child(9) {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    /* margin-left: -70px; */
+  }
+}
+@media (max-width: 768px) {
+  #logoUpdateParent input {
+    z-index: 0000;
+    position: relative;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1467px) {
+  #pdfPreview #userInfo > #form-shcool,
+  #pdfPreview #userInfo > #form-subject,
+  #pdfPreview #userInfo > #form-name,
+  #pdfPreview #userInfo > #form-roll,
+  #pdfPreview #userInfo > #form-set,
+  #pdfPreview #userInfo > #form-time,
+  #pdfPreview #userInfo > #form-class,
+  #pdfPreview #userInfo > #logoUpdateParent,
+  #pdfPreview #userInfo > #form-btn {
+    width: 50% !important;
+    float: left !important;
+    margin: 10px 0px !important;
+    top: 0px;
+    left: 0px;
+    position: static !important;
+  }
+
+  #pdfPreview #userInfo > #form-name,
+  #pdfPreview #userInfo > #form-set,
+  #pdfPreview #userInfo > #form-class {
+    clear: both;
+  }
+
+  #pdfPreview #userInfo > #form-btn {
+    width: 92% !important;
+    margin-top: 20px !important;
+  }
+  #userInfo label {
+    margin-left: 30px;
+  }
+
+  #pdfPreview #userInfo > #logoUpdateParent {
+    position: relative !important;
+    top: -163px;
+  }
+
+  #pdfPreview #userInfo > #form-subject,
+  #pdfPreview #userInfo > #form-roll,
+  #pdfPreview #userInfo > #form-time {
+    position: relative !important;
+    top: 54px;
+  }
+}
+
+@media (max-width: 1467px) {
+  /*.fileChooseBlocker {
+		left: 67%;
+	}*/
+}
+
+@media (max-width: 768px) {
+  .fileChooseBlocker {
+    top: 0px;
+    left: 187px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .toolbars_preview {
+    margin-left: 0;
+    /* width: 40%; */
+  }
+
+  .book_name {
+    width: auto;
+  }
+  .auto-topsection {
+    width: auto;
+    /* text-align: center !important; */
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .auto_level-buttons {
+    width: 100%;
+    height: auto !important;
+  }
+
+  .auto_level-buttons button {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .toolbars_preview {
+    width: 96%;
+    clear: both;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .top_checkbox {
+    float: none;
+    text-align: center;
+    margin: auto;
+    width: 40%;
+    display: inline-block;
+  }
+
+  .finalise_btns {
+    margin: 0;
+    float: right;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .level3-navigation {
+    height: auto;
+  }
+
+  .level3_buttons {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  #topHeader {
+    /* height: 24%; */
+  }
+}
+@media screen and (max-width: 675px) {
+  #topHeader {
+    /* height: 32%; */
+  }
+}
+
+@media screen and (max-width: 530px) {
+  #topHeader {
+    /* height: 40% !important; */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #topHeader {
+    /* height: 45% !important; */
+  }
+}
+@media screen and (max-width: 440px) {
+  #topHeader {
+    /* height: 60% !important; */
+  }
+}

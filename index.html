@@ -1,0 +1,870 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="author" content="Ashok Shah" />
+		<meta name="description" content="Test Generator" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Test Generator</title>
+
+		<link href="style/googlewebfont.css" rel="stylesheet" />
+
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="lib/jquery-confirm/jquery-confirm.min.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="lib/jquery.sumoselect/sumoselect.min.css" />
+		<link rel="stylesheet" type="text/css" href="style/style1.css" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="style/responsive1.css"
+			id="css-responsive" />
+		<link rel="stylesheet" type="text/css" href="style/style2.css" />
+		<link rel="stylesheet" type="text/css" href="style/bs-components.css" />
+		<link rel="stylesheet" type="text/css" href="style/print.css" />
+
+		<!-- theme for jstree -->
+		<link
+			rel="stylesheet"
+			type="text/css"
+			href="dist/themes/default/style.min.css" />
+
+		<!-- jquery 1.11.1 -->
+		<script type="text/javascript" src="lib/jquery/jquery-1.11.1.js"></script>
+
+		<!-- javascript database taffydb plugin -->
+		<script type="text/javascript" src="lib/taffydb/taffy-min.js"></script>
+
+		<script src="js/FileSaver.js"></script>
+		<script src="js/jquery.wordexport.js"></script>
+		<!-- tree structure jstree plugin -->
+		<script type="text/javascript" src="dist/jstree.min.js"></script>
+
+		<script
+			type="text/javascript"
+			src="lib/jquery-confirm/jquery-confirm.min.js"></script>
+		<script
+			type="text/javascript"
+			src="lib/jquery.sumoselect/jquery.sumoselect.min.js"></script>
+	</head>
+
+	<body>
+		<div id="wrapper">
+			<!-- start start screen -->
+			<div class="startScreenWrap" id="startScreen">
+				<div class="main-logo">
+					<img src="./img/main-logo.png" alt="English Press Logo" />
+				</div>
+				<video class="video-background" autoplay muted loop playsinline>
+          <source src="img/q_img/background.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+				<section class="startScreen">
+					<!-- <div class="top_header"> -->
+					<!-- <div class="instruction_btn">
+					<a href="Help.pdf" id="helpbtn" name="btn" target="_blank" class="fa fa-info"></a>
+				</div>-->
+				 <h1 class="typewriter"> Test Paper Generator </h1>
+					<div class="instruction_btn">
+						<a
+							href="../../index.html"
+							id="helpbtn"
+							name="btn"
+							class="fa fa-arrow-left"></a>
+					</div>
+					<!-- <div class="CiE-txt tgMainTitle">šsmš pesvejsšj</div> -->
+					<div class="CiE-txt tgMainTitle">Test Generator</div>
+					<br />
+					<!-- <img src="img/cover.jpg" alt="" height="35%" width="35%"> -->
+					<!-- <button type="submit" id="startBtn" name="btn" class="sm_button" onclick="selectTestType()">Start</button> -->
+					<!-- </div> -->
+					<div class="TG_bg">
+						<!-- <img src="img/cover.jpg" alt="" height="180" width="140">
+					<div class="CiE-txt tgTitle-1"><b>Ubuntu 18.04 (Class-5)</b></div> -->
+						<button
+							type="submit"
+							id="startBtn"
+							name="btn"
+							class="sm_button"
+							onclick="selectTestType()">
+							Start
+						</button>
+					</div>
+					<div class="clear"></div>
+					<br /><br /><br />
+				</section>
+			</div>
+			<!-- end start screen -->
+
+			<section id="activityArea">
+				<div id="level1">
+					<div id="topHeader">
+						<div class="level1-header">
+							<div class="auto-topsection"></div>
+							<img class="publication_logo" src="./img/main-logo.png" alt="" />
+							<div class="book_name">
+								<h1 class="tgTitle">heeJeveer - 3</h1>
+							</div>
+
+							<div id="wrapper-button">
+								<!-- <button class="info_btn" id="showCartBtn" onclick="showCart()">Preview test </button> -->
+								<div class="totalQues" id="QuesSelectedBtn">
+									Total questions added = <span id="cartItems"> 0</span>
+								</div>
+								<p style="font-size: 15px; color: #fff">
+									Total number of questions in book =
+									<span id="totalQuestionsInTG">0</span>
+								</p>
+							</div>
+							<div class="auto-tabs-section">
+								<div class="auto-tabs-wrapper">
+									<button
+										class=""
+										title="Home"
+										id="homeBtn1"
+										onclick="window.location.reload()">
+										<i class="fa fa-home"></i>
+									</button>
+									<button
+										class=""
+										title="Help"
+										onclick="window.open('Help.pdf', '_blank')">
+										<i class="fa fa-info"></i>
+									</button>
+									<!-- <button class="" title="Back" onclick="selectTestType()"><i class="fa fa-arrow-left"></i></button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="manual-filter-container">
+							<div
+								class="manual-filter-section"
+								style="display: none !important">
+								<label for="manual-difficulty">Difficulty Level</label>
+								<select
+									multiple="multiple"
+									name="manual-difficulty"
+									class="manual-difficulty"
+									id="manual-difficulty">
+									<option selected value="E">Easy</option>
+									<option selected value="M">Medium</option>
+									<option selected value="H">Hard</option>
+								</select>
+							</div>
+							<div
+								class="manual-filter-section"
+								style="display: none !important">
+								<label for="manual-outcome"> Question Bank</label>
+								<select
+									multiple="multiple"
+									name="manual-outcome"
+									class="manual-outcome"
+									id="manual-outcome"></select>
+							</div>
+							<button
+								style="display: none !important"
+								id="btn-refresh-list"
+								class="info_btn margin0">
+								Apply Filter
+							</button>
+						</div>
+					</div>
+
+					<div id="level1_explorer">
+						<nav id="collectionList" style="display: block">
+							<!-- <h3 class="navTitle">eqke&lt;eÙe metÛeer</h3> -->
+							<h3 class="navTitle">Table of Contents</h3>
+							<div id="container">
+								<!-- jstree -->
+							</div>
+						</nav>
+
+						<div id="explorer">
+							<!-- breadcrums, folders, statistics and questions -->
+						</div>
+					</div>
+				</div>
+
+				<div id="level2">
+					<div id="toolbars">
+						<div class="auto-topsection"></div>
+						<img class="publication_logo" src="./img/main-logo.png" alt="" />
+						<div class="book_name">
+							<h1 class="tgTitle">heeJeveer - 3</h1>
+							<h3>Test preview</h3>
+						</div>
+						<div class="toolbars_preview">
+							<div class="finalise_btns">
+								<button class="info_btn" onClick="autoNewQuestion()">
+									Add Your Question
+								</button>
+								<button class="info_btn" onClick="switchScreen('level1')">
+									Add More Questions
+								</button>
+								<button class="info_btn" onClick="showPreview1()">
+									Finalise
+								</button>
+							</div>
+							<div class="top_checkbox">
+								<li>
+									<input
+										type="checkbox"
+										id="student-version"
+										onChange="toggleAnswers();" />
+									Include Answers
+								</li>
+								<li>
+									<input
+										type="checkbox"
+										id="student-version-m"
+										onChange="toggleMarks();" />
+									Show Marks
+								</li>
+							</div>
+						</div>
+
+						<div class="auto_level-buttons">
+							<button class="" title="Home" onclick="confirmReload()">
+								<i class="fa fa-home"></i>
+							</button>
+							<button
+								class=""
+								title="Help"
+								onclick="window.open('Help.pdf', '_blank')">
+								<i class="fa fa-info"></i>
+							</button>
+							<!-- <button class="" title="Back" onclick="selectTestType()"><i class="fa fa-arrow-left"></i></button> -->
+							<button class="" title="Back" onclick="switchScreen('level1')">
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+
+					<div id="pdfPreview"></div>
+				</div>
+
+				<div id="level3">
+					<div class="level3-navigation noprint">
+						<div class="auto-topsection"></div>
+						<img class="publication_logo" src="./img/main-logo.png" alt="" />
+						<div class="book_name">
+							<h1 class="tgTitle">heeJeveer - 3</h1>
+						</div>
+
+						<div class="level3_buttons">
+							<button
+								class="info_btn"
+								id="print-student"
+								onClick="printStudent()">
+								Print Student Copy
+							</button>
+							<button
+								class="info_btn"
+								id="print-teacher"
+								onClick="printTeacher()">
+								Print Teacher Copy
+							</button>
+							<button class="info_btn export-word">
+								<a class="word-export" href="javascript:void(0)">
+									Export as .doc
+								</a>
+							</button>
+						</div>
+						<div class="auto_level-buttons">
+							<button
+								class=""
+								title="Home"
+								id="closePreviewBtn"
+								onClick="confirmReload()">
+								<i class="fa fa-home"></i>
+							</button>
+							<button
+								class=""
+								title="Help"
+								onclick="window.open('Help.pdf', '_blank')">
+								<i class="fa fa-info"></i>
+							</button>
+							<button class="" title="Back" onClick="backToEdit()">
+								<i class="fa fa-arrow-left"></i>
+							</button>
+						</div>
+					</div>
+
+					<!-- preview html content for pdf generation -->
+					<div id="previewHTML"></div>
+				</div>
+			</section>
+
+			<section id="typeAuto" style="display: none">
+				<div id="mainPage">
+					<!-- start level 1 -->
+
+					<div id="auto-level-1" class="auto-level-page">
+						<div class="auto-toptitle">
+							<div class="auto-topsection"></div>
+							<img class="publication_logo" src="./img/main-logo.png" alt="" />
+							<div class="book_name">
+								<h1 class="tgTitle">heeJeveer - 3</h1>
+							</div>
+							<div class="auto-tabs-section">
+								<div class="auto-tabs-wrapper">
+									<button
+										class=""
+										title="Home"
+										onClick="window.location.reload();">
+										<i class="fa fa-home"></i>
+									</button>
+									<button
+										class=""
+										title="Help"
+										onclick="window.open('Help.pdf', '_blank')">
+										<i class="fa fa-info"></i>
+									</button>
+									<!--<button class="" title="Back" onclick="selectTestType()"><i class="fa fa-arrow-left"></i></button> -->
+								</div>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+						<div id="mainFrame">
+							<div id="sidePanel-auto" class="padding0">
+								<!-- .readonly-pannel (for readonly) -->
+								<div class="">
+									<!-- <h3>eqke&lt;eÙe metÛeer</h3> -->
+									<h3>Table of Contents</h3>
+									<ul class="side-panel-select">
+										<li class="checkbox">
+											<label class="checkbox" for="chooseAll">
+												<input
+													id="chooseAll"
+													type="checkbox"
+													value=""
+													class="input-mini"
+													onclick="selectQuestions()" />Check All
+											</label>
+										</li>
+									</ul>
+									<ol id="chapterList"></ol>
+								</div>
+							</div>
+
+							<div class="clearfix"></div>
+							<div id="auto-page1">
+								<div class="instructions-area">
+									<div class="alert alert-info">
+										<b>CodeGPT V4.0 Book-1</b>
+										<li>Select chapters from the table of contents.</li>
+										<li>
+											Click on the submit button to finalize your selection.
+										</li>
+									</div>
+								</div>
+
+								<div id="filter-area">
+									<div id="auto-filter-outcome">
+										<!-- <h3>Question Bank</h3> -->
+										<h3>Objectives</h3>
+										<ul></ul>
+									</div>
+
+									<div id="auto-filter-difficulty">
+										<h3>Difficulty Level</h3>
+										<ul></ul>
+									</div>
+
+									<div style="clear: both"></div>
+								</div>
+
+								<div class="padding15">
+									<button
+										type="submit"
+										class="sm_button"
+										onclick="checkSelection();">
+										Submit
+									</button>
+								</div>
+							</div>
+
+							<div id="auto-page2" style="display: none">
+								<div class="instructions-area">
+									<div class="alert alert-info">
+										<!-- <h3>øeMve Ûegvesb</h3> -->
+										<h3>Select Questions</h3>
+									</div>
+
+									<div class="worksheet-selection">
+										<div class="width50" id="selection-worksheet">
+											<label for="auto-worksheet" onClick="loadWorksheet()">
+												<input
+													type="radio"
+													value="worksheet"
+													id="auto-worksheet"
+													name="worksheet-selection" />Worksheet
+											</label>
+											<label
+												for="auto-testpaper"
+												class="ml100"
+												onClick="loadWorksheet()">
+												<input
+													type="radio"
+													value="testpaper"
+													id="auto-testpaper"
+													name="worksheet-selection"
+													checked />Test Paper
+											</label>
+										</div>
+									</div>
+
+									<div id="section-worksheet">
+										<div class="activityDetails mltop40">
+											<div>
+												<!--<div class="activity-submit-wrap">
+									<button class="sm_button" onClick="submitAutoTGWorksheet()">Submit</button>
+								</div>-->
+												<label class="checkbox" for="select-all-qt-auto">
+													<input
+														id="select-all-qt-auto"
+														type="checkbox"
+														value=""
+														class="input-option"
+														onclick="selectAll(this.checked, '#auto-worksheet-details')" />meYeer
+													keâe ÛeÙeve keâjsb~
+												</label>
+												<table class="auto-seelctquestions">
+													<thead>
+														<tr>
+															<th>Question Type</th>
+															<th>No. of Questions</th>
+														</tr>
+													</thead>
+													<tbody id="auto-worksheet-details"></tbody>
+												</table>
+											</div>
+										</div>
+
+										<div class="activity-submit-wrap">
+											<button
+												class="sm_button"
+												onClick="submitAutoTGWorksheet()">
+												Submit
+											</button>
+										</div>
+									</div>
+
+									<div id="section-testpaper" style="display: none">
+										<!--<div class="activity-submit-wrap">
+									<button  class="sm_button" style="margin-right: 0px;" onClick="submitAutoTGTestpaper()">Submit</button>
+								</div>-->
+										<div class="auto-top-bar">
+											<div class="cntiner">
+												<div class="pull-left">
+													Duration (Mins)*
+													<input
+														class="width80"
+														type="text"
+														onkeydown="return numValidate(event)"
+														id="auto-duration" />
+												</div>
+
+												<div
+													class="pull-right input-marks-teacher"
+													style="text-align: right">
+													Max. Marks
+													<input
+														class="width40"
+														type="text"
+														id="auto-maxmarks"
+														readonly /><input
+														class="width40"
+														type="text"
+														id="auto-maxmarks-a"
+														style="display: none" />
+												</div>
+											</div>
+										</div>
+										<div class="clearfix"></div>
+										<div class="activityDetails">
+											<div>
+												<label class="checkbox" for="select-all-qt-auto-tg">
+													<input
+														id="select-all-qt-auto-tg"
+														type="checkbox"
+														value=""
+														class="input-option"
+														onclick="selectAll(this.checked, '#auto-testpaper-details')" /><b>
+														<!-- <font face="APS-DV-PrakashRoman" size="4.5">meYeer keâe ÛeÙeve keâjsb~</font> -->
+														Select All
+													</b>
+												</label>
+												<table class="auto-seelctquestions">
+													<thead>
+														<tr>
+															<!-- <th>ØeMveesb keâs øekeâej</th> -->
+															<th>Types of Questions</th>
+															<!-- <th>ØeMveesb keâer mebKÙee</th> -->
+															<th>Number of Questions</th>
+															<!-- <th>&nbsp;&nbsp;&nbsp;&nbsp;Debkeâ øeefle ØeMve</th> -->
+															<th>Marks per Question</th>
+															<!-- <th>keâgue</th> -->
+															<th>Total</th>
+														</tr>
+													</thead>
+													<tbody id="auto-testpaper-details">
+														<!-- 
+												<tr v-for="q in lists">
+													<td>
+														<label class="checkbox" for="value-checkmark-1">
+														<input id="value-checkmark-1" type="checkbox" value="" class="input-option" onclick="showOptions(this.checked, '#value-edit-1');">Label the map</label>
+													</td>
+													<td class="mxio">
+														<label><select id="value-edit-1" disabled="">
+															<option value="1">1</option></select>
+														</label>
+													</td>
+													<td>
+														x <input type="text" class="marksper" />
+													</td>
+													<td>
+														= 0
+													</td>
+												</tr>
+												-->
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<hr />
+										<div class="bottom-total-ls">
+											<span class="total-marks-text">Total</span>
+											<span class="" id="total-marks-obj">0</span>
+										</div>
+										<div class="activity-submit-wrap">
+											<button
+												class="sm_button"
+												onClick="submitAutoTGTestpaper()">
+												Submit
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- start level 2 -->
+					<div id="auto-level-2" style="display: none" class="auto-level-page">
+						<div id="toolbars">
+							<div class="auto-topsection"></div>
+							<img class="publication_logo" src="./img/main-logo.png" alt="" />
+							<div class="book_name">
+								<h1 class="tgTitle">heeJeveer - 3</h1>
+								<h3>Test preview</h3>
+							</div>
+							<div class="toolbars_preview">
+								<div class="top_checkbox">
+									<li>
+										<input
+											type="checkbox"
+											id="student-version"
+											onChange="toggleAnswers();" />
+										Include Answers
+									</li>
+									<li>
+										<input
+											type="checkbox"
+											id="student-version-m"
+											onChange="toggleMarks();" />
+										Show Marks
+									</li>
+								</div>
+
+								<div class="finalise_btns">
+									<button
+										class="info_btn"
+										title="Back"
+										onClick="switchScreenAuto('auto-level-1')">
+										Add More Textbook Questions
+									</button>
+									<button class="info_btn" onClick="autoNewQuestion()">
+										Add New Question
+									</button>
+									<button class="info_btn" onClick="showPreview1()">
+										Finalise
+									</button>
+								</div>
+							</div>
+
+							<div class="auto_level-buttons">
+								<button class="" title="Home" onclick="confirmReload()">
+									<i class="fa fa-home"></i>
+								</button>
+								<button
+									class=""
+									title="Help"
+									onclick="window.open('Help.pdf', '_blank')">
+									<i class="fa fa-info"></i>
+								</button>
+								<!-- <button class="" title="Back" onclick="selectTestType()"><i class="fa fa-arrow-left"></i></button> -->
+								<button
+									class=""
+									title="Back"
+									onclick="switchScreenAuto('auto-level-1')">
+									<i class="fa fa-arrow-left"></i>
+								</button>
+							</div>
+						</div>
+
+						<div class="clear"></div>
+						<div id="pdfPreview"></div>
+					</div>
+
+					<!-- start level 3 -->
+					<div id="auto-level-3" style="display: none" class="auto-level-page">
+						<div class="level3-navigation noprint">
+							<div class="auto-topsection"></div>
+							<img class="publication_logo" src="./img/main-logo.png" alt="" />
+							<div class="book_name">
+								<h1 class="tgTitle">heeJeveer - 3</h1>
+							</div>
+
+							<div class="level3_buttons">
+								<button
+									class="info_btn"
+									id="print-student"
+									onClick="printStudent()">
+									Print Student Copy
+								</button>
+								<button
+									class="info_btn"
+									id="print-teacher"
+									onClick="printTeacher()">
+									Print Teacher Copy
+								</button>
+								<button class="info_btn export-word">
+									<a class="word-export" href="javascript:void(0)">
+										Export as .doc
+									</a>
+								</button>
+							</div>
+							<div class="auto_level-buttons">
+								<button
+									class=""
+									title="Home"
+									id="closePreviewBtn"
+									onClick="confirmReload()">
+									<i class="fa fa-home"></i>
+								</button>
+								<button
+									class=""
+									title="Help"
+									onclick="window.open('Help.pdf', '_blank')">
+									<i class="fa fa-info"></i>
+								</button>
+								<button class="" title="Back" onClick="backToEditAuto()">
+									<i class="fa fa-arrow-left"></i>
+								</button>
+							</div>
+
+							<!--<div id="btn-downlodify"><p id="downloadify">...</i></p></div>-->
+
+							<!-- <input type="button" value="print" onclick="PrintDiv();" />-->
+							<!-- <button id="print" onClick="javascript:printCommand()">Print</button> -->
+
+							<!-- design this button -->
+						</div>
+
+						<!-- preview html content for pdf generation -->
+						<div id="previewHTML"></div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<div id="replaceQuestion">
+			<div>
+				<div class="topTitle">Replace Question</div>
+				<div id="replaceList"></div>
+				<div class="bottomMenu">
+					<button
+						id="closeReplaceBtn"
+						class="info_btn"
+						onClick="$('#replaceQuestion').hide()">
+						Close
+					</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="testgenerator-type">
+			<div class="tg-type-container">
+				<div class="topTitle">Select test generator mode</div>
+
+				<div class="typePannel">
+					<button class="sm_button" onClick="startAuto()">Auto</button>
+					<button class="sm_button" onClick="startScreen();">Manual</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="insertNewQuestion">
+			<div class="insertNewQuestion-container">
+				<div class="topTitle">Add New Question</div>
+
+				<div class="form-insertion">
+					<form id="new-question-insertion-form">
+						<div class="form-group">
+							<label for="afm-type">Type:</label>
+							<select id="afm-type" class="form-control"></select>
+						</div>
+
+						<!-- <div class="form-group" id="afm-type-input">
+              <label for="afm-type-custom">Type:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="afm-type-custom"
+                placeholder=""
+              />
+            </div> -->
+
+						<div class="form-group">
+							<label for="afm-question">Title:</label>
+							<input type="text" id="afm-question-title" class="form-control" />
+						</div>
+
+						<div class="form-group">
+							<label for="afm-question">Question:</label>
+							<!-- <input type="text" class="form-control" id="afm-question" placeholder=""> -->
+							<textarea id="afm-question" class="form-control"></textarea>
+						</div>
+
+						<div class="form-group">
+							<label for="">Image:</label>
+							<div class="image-grp-afm-wrap">
+								<div class="image-grp-afm">
+									<input
+										type="file"
+										accept="image/*"
+										class="form-control"
+										id="afm-image"
+										placeholder="" />
+								</div>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="afm-answer">Answer:::</label>
+							<input
+								type="text"
+								class="form-control"
+								id="afm-answer"
+								placeholder="" />
+						</div>
+
+						<div class="form-group">
+							<label for="afm-marks">Marks:</label>
+							<input
+								type="number"
+								min="0"
+								class="form-control"
+								id="afm-marks"
+								placeholder="" />
+						</div>
+
+						<div style="display: none">
+							<div class="form-group">
+								<label for="afm-difficulty">Difficulty:</label>
+								<select id="aft-difficulty" class="form-control">
+									<option value="E">Easy</option>
+									<option value="M">Medium</option>
+									<option value="H">Hard</option>
+								</select>
+							</div>
+
+							<div class="form-group">
+								<label for="afm-outcome">Source:</label>
+								<select id="aft-outcome" class="form-control"></select>
+							</div>
+						</div>
+						<div class="insertion-footer">
+							<button
+								type="button"
+								class="info_btn"
+								onClick="autoNewQuestionAdd()">
+								Submit
+							</button>
+							<button
+								type="button"
+								class="info_btn"
+								onClick="dismissPopupInsertion();">
+								Close
+							</button>
+						</div>
+					</form>
+				</div>
+
+				<p
+					class="alert alert-danger"
+					id="aft-validation"
+					style="display: none"></p>
+			</div>
+		</div>
+
+		<div id="treeTemplate"></div>
+
+		<div style="display: none"><canvas id="canvas"></canvas></div>
+
+		<!-- question collection -->
+
+		<script type="text/javascript" src="js/config.js"></script>
+
+		<!-- working of database and level adjustment -->
+		<script type="text/javascript" src="js/workquerytree.js"></script>
+		<script type="text/javascript" src="lib/moment.min.js"></script>
+		<script type="text/javascript" src="lib/jspdf/jspdf.debug.js"></script>
+		<script type="text/javascript" src="lib/jspdf/libs/html2pdf.js"></script>
+		<script type="text/javascript" src="lib/kendoUI/kendo.all.min.js"></script>
+		<!-- question collection -->
+		<script type="text/javascript" src="js/functions.js"></script>
+		<!-- question collection -->
+
+		<script type="text/javascript" src="js/auto.js"></script>
+
+		<script type="text/javascript" src="js/main.js"></script>
+
+		<script type="text/javascript">
+			function getPDF() {
+				var html = String($("#previewHTML").html()).replace(
+					/(<img\b[^<>]*[^<>\/])>/gi,
+					"$1 />"
+				);
+				var htmlstr =
+					'<html><head><link rel="stylesheet" type="text/css" href="style.css" /></head><body>' +
+					html +
+					"</body></html>";
+				shah.getPDF(htmlstr);
+			}
+			function printCommand() {
+				//$('#previewHTML').css('overflow-y', 'inherit');
+				$("#css-responsive").attr("href", "");
+				window.print();
+			}
+
+			window.onload = function () {
+				document.getElementById("student-version").checked = false;
+			};
+		</script>
+
+		<!-- <script type="text/javascript">
+      jQuery(document).ready(function ($) {});
+    </script> -->
+		<script src="js/html-docx.min.js"></script>
+		<script src="js/word-export.js"></script>
+	</body>
+</html>
